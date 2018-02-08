@@ -49,7 +49,7 @@ defmodule Absinthe.Plug.GraphiQL do
   """
 
   require EEx
-  @graphiql_version "0.9.3"
+  @graphiql_version "0.10.2"
   EEx.function_from_file :defp, :graphiql_html, Path.join(__DIR__, "graphiql.html.eex"),
     [:graphiql_version, :query_string, :variables_string, :result_string]
 
