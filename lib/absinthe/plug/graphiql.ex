@@ -53,7 +53,7 @@ defmodule Absinthe.Plug.GraphiQL do
   EEx.function_from_file :defp, :graphiql_html, Path.join(__DIR__, "graphiql.html.eex"),
     [:graphiql_version, :query_string, :variables_string, :result_string]
 
-  @graphiql_workspace_version "1.0.4"
+  @graphiql_workspace_version "1.0.5"
   EEx.function_from_file :defp, :graphiql_workspace_html, Path.join(__DIR__, "graphiql_workspace.html.eex"),
     [:graphiql_workspace_version, :query_string, :variables_string, :default_headers]
 
